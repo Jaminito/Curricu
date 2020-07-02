@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curri</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background-color: rgb(46, 46, 46);">
+    <div style="display: flex; justify-content: space-around;">
+    <div>
+    <h2 id="name"><b>Santiago J Alcántara Martín</b></h2>
+    <section id="contact">
+        <div>
+        <h3><img src="" alt="postal"> 36205 Vigo.</h3>
+        <h3><img src="" alt="tlf"> 633 394 695</h3>
+        <h3> <img src="" alt="email"> santialcantaramartin@gmail.com</h3>
+    </div>
+</div>
+    <img src="" alt="photo">
+</div>
+    </section>
+    <button type="button" class="collapsible" style="border: 2px solid rgb(207, 207, 207);"><b>Objetivo profesional</b></button>
+    <div class="content">
+        <p><b>¬ Técnico de sistemas informáticos y soportes.</b></p>
+        <p><b>¬ Operador de sistemas</b></p>
+    </div>
+    <button type="button" class="collapsible" style="border: 2px solid rgb(207, 207, 207);"><b>Formación académica y complementaria</b></button>
+    <div class="content">
+        <b><p>-IFCT0210 - Operaciones de sistemas informáticos.</p>
+          <p>Competencia general: Aplicar procedimientos de administración y configuración del software y hardware del sistema informático,así como solucionar las incidencias que se puedan producir en elnormal funcionamiento del mismo y monitorizar sus rendimientos y consumos, siguiendo especificaciones recibidas.
+        </b> </p>
+        <p>UC0219_2: Instalar y configurar el software base en sistemas microinformáticos.</p>
+        <p>UC0957_2: Mantener y regular el subsistema físico en sistemas informáticos.</p>
+        <p>UC0958_2: Ejecutar procedimientos de administración y mantenimiento en el software base.</p>
+        <p>UC0959_2: Mantener la seguridad de los subsistemas físicos y lógicos en sistemas informáticos</p>
+    </div>
+    <button type="button" class="collapsible"><b>Experiencia profesional y no profesional</b></button>
+    <div class="content">
+        <p><ins><b>SECTOR INFORMÁTICO</b></ins></p>
+        <p><b>· ALEX LIBERA S.L.</b> Prácticas no laborales. 40h. Año 2019</p>
+        <p><i>Puesto: Técnico de sistemas.</i></p>
+        <p><i>Competencias adquiridas:</i></p>
+        <p>¬ Realizar procesos de instalación de sistemas operativos para su utilización en sistemas microinformáticos,siguiendo especificaciones recibidas.</p>
+        <p>¬ Actualizar el sistema operativo para garantizar su funcionamiento,siguiendo especifcaciones técnicas recibidas y procedimientos de la organización.</p>
+        <p>¬ Explotar las funcionalidades del sistema microinformático mediante la utilizacion del software base y aplicaciones estándares, teniendo en cuenta las necesidades de uso</p>
+    </div>
+    <button type="button" class="collapsible"><b>Otros datos de interés</b></button>
+    <div class="content">
+        <p>¬ Dominio paquete office y 3ds Studio Max.</p>
+        <p>¬ Capacidad de organización y trabajo en equipo,adaptibilidad,amplia capacidad de aprendizaje.</p>
+        <p>¬ Disponibilidad inmediata y horaria.</p>
+        <p>¬ Posibilidad de aportar referencias de cualquier experiencia profesional.</p>
+    </div>
+
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+</body>
+</html>
