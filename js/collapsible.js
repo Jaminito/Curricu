@@ -1,4 +1,5 @@
-var coll = document.getElementsByClassName("collapsible");
+$(document).ready(()=>{
+var coll = $(".collapsible");
         var i;
         
         for (i = 0; i < coll.length; i++) {
@@ -12,3 +13,4 @@ var coll = document.getElementsByClassName("collapsible");
             } 
           });
         }
+      })
